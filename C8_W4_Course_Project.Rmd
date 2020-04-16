@@ -7,9 +7,9 @@ output:
   rmarkdown::github_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-knitr::include_graphics
+```{r}
+knitr::opts_chunk$set(fig.path = "README_figs/README-")
+library(ggplot2)
 ```
 
 # Practical Machine Learning Project
