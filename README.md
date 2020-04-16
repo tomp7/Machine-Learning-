@@ -1,5 +1,7 @@
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::include_graphics
 ```
 
 # Practical Machine Learning Project
