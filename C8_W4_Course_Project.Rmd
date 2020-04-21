@@ -3,13 +3,13 @@ title: "C8_W4_Project"
 author: "Tom"
 date: "April 16, 2020"
 output:
-  
-  rmarkdown::github_document
+  html_document:
+    keep_md: true
 ---
 
-```{r}
-knitr::opts_chunk$set(fig.path = "README_figs/README-")
-library(ggplot2)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::include_graphics
 ```
 
 # Practical Machine Learning Project
@@ -139,6 +139,7 @@ Matrix_RF
 ```
 
 ```{r RF_plot}
+knitr::opts_chunk$set(fig.path = "README_figs/README-")
 # visualization of confusion matrix 
 plot(Matrix_RF$table, col = Matrix_RF$byClass, 
      main = paste("Random Forest - Accuracy =", round(Matrix_RF$overall['Accuracy'], 4)))
@@ -211,7 +212,7 @@ We also see that the accuracy (0.9878) is much higher than that of the Decision 
 
 *** 
 
-## Conlusion 
+## Conclusion 
 
 After having run our three different methods on our data, we can directly compare all three accuracies. 
 
